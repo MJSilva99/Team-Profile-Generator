@@ -131,6 +131,8 @@ function internInfo() {
                 }
             });
     }
+
+    managerInfo();
     
     
     
