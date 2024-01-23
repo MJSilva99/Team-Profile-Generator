@@ -107,3 +107,30 @@ function internInfo() {
             promptGetTeam();
         });
     }
+
+    function promptGetTeam() {
+        inquirer
+            .prompt([
+                {
+                    type: "list",
+                    name: "memberType",
+                    message: "Select a team member to add:",
+                    choices: ["Engineer", "Intern", "Finish building your team"],
+                },
+            ])
+            .then((answer) => {
+                if (answer.memberType === "Engineer") {
+                    engineerInfo();
+                } else if (answer.memberType === "Intern") {
+                    internInfo();
+                } else {
+                    
+                    const html = render(team);
+                    fs.writeFileSync(outputPath, html);
+                    console.log("Your team HTML file has been generated!");
+                }
+            });
+    }
+    
+    
+    
