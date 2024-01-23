@@ -15,6 +15,8 @@
   
   ## Usage
   To use the README Generator, clone the repository, run npm install to install dependencies, and then execute node index.js in the terminal. Follow the prompts to input the details for each employee. When you're finished select finish building your team. This will create a html file with the details that you inputted for each employee!
+
+  Sample html file![Alt text](/images/Sample%20HTML.png)
   
   ## License
   This project is licensed under the MIT license.
